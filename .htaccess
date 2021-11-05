@@ -1,1 +1,2 @@
 Header add Content-Security-Policy: "script-src 'sha256-{HASHED_INLINE_SCRIPT}' 'strict-dynamic' https: 'unsafe-inline'; object-src 'none'; base-uri 'none';"
+ErrorDocument 404 /ea-pages/404.html
