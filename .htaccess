@@ -1,2 +1,1 @@
-LoadModule headers_module modules/mod_headers.so
 Header add Content-Security-Policy: "script-src 'sha256-{HASHED_INLINE_SCRIPT}' 'strict-dynamic' https: 'unsafe-inline'; object-src 'none'; base-uri 'none';"
