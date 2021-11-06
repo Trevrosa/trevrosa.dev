@@ -1,2 +1,17 @@
-Header add Content-Security-Policy: "script-src 'sha256-{HASHED_INLINE_SCRIPT}' 'strict-dynamic' https: 'unsafe-inline'; object-src 'none'; base-uri 'none';"
+#csp, don't touch
+Header unset Content-Security-Policy
+#Add the entire CSP key value pairs that you want below is just default-src
+Header add Content-Security-Policy "default-src 'self'"
+#This opens support to older browsers that support X-Content-Security-Policy but not Content-Security-Policy
+Header unset X-Content-Security-Policy
+Header add X-Content-Security-Policy "default-src 'self'"
+#This opens support to older browsers that support X-WebKit-CSP but not Content-Security-Policy
+Header unset X-WebKit-CSP
+Header add X-WebKit-CSP "default-src 'self'"
+Header set X-Content-Type-Options "nosniff"
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "DENY"
+Header set Strict-Transport-Security "max-age=631138519; includeSubDomains"
+
+#error pages
 ErrorDocument 404 /ea_pages/404.html
