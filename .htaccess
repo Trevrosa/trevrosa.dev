@@ -1,15 +1,17 @@
 #csp, don't touch
 Header unset Content-Security-Policy
-Header add Content-Security-Policy "default-src 'unsafe-inline'"
-#This opens support to older browsers that support X-Content-Security-Policy but not Content-Security-Policy
+Header add Content-Security-Policy "default-src 'unsafe-inline' 'img-src 'self''"
+
 Header unset X-Content-Security-Policy
 Header add X-Content-Security-Policy "default-src 'unsafe-inline'"
+
 Header unset X-WebKit-CSP
 Header add X-WebKit-CSP "default-src 'unsafe-inline'"
+
 Header set X-Content-Type-Options "nosniff"
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Frame-Options "DENY"
 Header set Strict-Transport-Security "max-age=631138519; includeSubDomains"
 
 #error pages
-ErrorDocument 404 /ea_pages/404.html
+ErrorDocument 404 /ea_pages/404.htmlt
