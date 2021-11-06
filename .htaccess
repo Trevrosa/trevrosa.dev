@@ -1,12 +1,12 @@
 #csp, don't touch
 Header unset Content-Security-Policy
-Header add Content-Security-Policy "default-src 'unsafe-inline' 'img-src 'self''"
+Header add Content-Security-Policy "default-src 'unsafe-inline' img-src 'self'"
 
 Header unset X-Content-Security-Policy
-Header add X-Content-Security-Policy "default-src 'unsafe-inline'"
+Header add X-Content-Security-Policy "default-src 'unsafe-inline' img-src 'self'"
 
 Header unset X-WebKit-CSP
-Header add X-WebKit-CSP "default-src 'unsafe-inline'"
+Header add X-WebKit-CSP "default-src 'unsafe-inline' img-src 'self'"
 
 Header set X-Content-Type-Options "nosniff"
 Header set X-XSS-Protection "1; mode=block"
@@ -14,4 +14,4 @@ Header set X-Frame-Options "DENY"
 Header set Strict-Transport-Security "max-age=631138519; includeSubDomains"
 
 #error pages
-ErrorDocument 404 /ea_pages/404.htmlt
+ErrorDocument 404 /ea_pages/404.html
