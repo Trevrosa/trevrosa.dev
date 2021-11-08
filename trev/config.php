@@ -18,7 +18,7 @@ return [
      * If you must change this, change the path of the `Directory` tag in `.htaccess` from `u/` to your new folder
      * Do not set this to '/'. Your site will either not work, or people will be able to execute arbitrary code on your computer.
      */
-    'file_storage_folder' => 'u/',
+    'file_storage_folder' => 'files/',
 
     /* Sets the web path where you will be able to access your files 
      * If you set this to / and your base_url is https://www.example.com, your files will be accessible from
