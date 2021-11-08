@@ -9,11 +9,11 @@ var fg = new Image();
 var pipeNorth = new Image();
 var pipeSouth = new Image();
 
-bird.src = "images/bird.png";
-bg.src = "images/bg.png";
-fg.src = "images/fg.png";
-pipeNorth.src = "images/pipeNorth.png";
-pipeSouth.src = "images/pipeSouth.png";
+bird.src = "assets/images/bird.png";
+bg.src = "assets/images/bg.png";
+fg.src = "assets/images/fg.png";
+pipeNorth.src = "assets/images/pipeNorth.png";
+pipeSouth.src = "assets/images/pipeSouth.png";
 
 
 // some variables
