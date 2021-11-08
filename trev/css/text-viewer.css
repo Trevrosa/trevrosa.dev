@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.IconButtons {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 2.25rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.bi {
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.1s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.bi.is-hidden {
+    display: none;
+}
+
+.bi:hover, .bi:focus {
+    opacity: 0.9;
+}
+
+body[data-theme=dark] .bi-sun {
+    display: block;
+}
+body[data-theme=dark] .bi-moon {
+    display: none;
+}
+
+body[data-theme=light] .bi-sun {
+    display: none;
+}
+body[data-theme=light] .bi-moon {
+    display: block;
+}
+
+pre.box {
+    margin: 0 !important;
+    width: -moz-fit-content;
+    width: -webkit-fill-available;
+    width: fit-content;
+    min-width: 100%;
+}
+
+pre code.code-box {
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 30px 60px;
+    padding-left: 60px; /* this is the amount of padding before being adjusted by JS */
+    font-size: 14px;
+    font-family: monospace;
+    position:  relative;
+}
+
+.line-numbers {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    font-family: monospace;
+    text-align: right;
+    color: #808080;
+    padding: 0 12px;
+    padding-top: 30px;
+    pointer-events: none;
+    min-height: 100%;
+}
