@@ -1,1 +1,1 @@
-trev/files/* filter=lfs diff=lfs merge=lfs -text
+trev/files filter=lfs diff=lfs merge=lfs -text
