@@ -1,1 +1,17 @@
+#csp, don't touch
+Header unset Content-Security-Policy
+Header add Content-Security-Policy "default-src 'unsafe-inline' 'strict-dynamic'; img-src 'self'; object-src 'none'"
+
+Header unset X-Content-Security-Policy
+Header add X-Content-Security-Policy "default-src 'unsafe-inline' 'strict-dynamic'; img-src 'self'; object-src 'none'"
+
+Header unset X-WebKit-CSP
+Header add X-WebKit-CSP "default-src 'unsafe-inline' 'strict-dynamic'; img-src 'self'; object-src 'none'"
+
+Header set X-Content-Type-Options "nosniff"
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "DENY"
+Header set Strict-Transport-Security "max-age=631138519; includeSubDomains"
+
+#error pages
 ErrorDocument 404 /ea_pages/404.html
