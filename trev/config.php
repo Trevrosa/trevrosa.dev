@@ -32,13 +32,13 @@ return [
     'zip_storage_folder' => 'backups/',
 
     /* This is a list of IPs that can access the gallery page (Leave empty to disable IP blocking) */
-    'allowed_ips' => ['127.0.0.1'],
+    'allowed_ips' => [],
 
     /* This enables or disables password protection for your gallery page. If this is off, only IP verification will be used */
     'enable_password_login' => false,
 
     /* This sets whether you need to provide a username to log in. */
-    'enable_username' => false,
+    'enable_username' => true,
 
     /* This sets how long remember me tokens will be valid for. You don't need to change this. */
     'remember_me_expiration_days' => 30,
@@ -57,13 +57,13 @@ return [
     'enable_gallery_page_uploads' => true,
 
     /* This sets whether you will be able to delete all of your uploads at once */
-    'enable_delete_all' => true,
+    'enable_delete_all' => false,
 
     /* Delete file option (true to enable, disabled by default) */
-    'enable_delete' => true,
+    'enable_delete' => false,
 
     /* Enables the option to rename files from the gallery page */
-    'enable_rename' => true,
+    'enable_rename' => false,
 
     /* Show image in tooltip  (true to enable, disabled by default) */
     'enable_tooltip' => true,
