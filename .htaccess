@@ -1,12 +1,12 @@
 #csp, don't touch
 Header unset Content-Security-Policy
-Header add Content-Security-Policy "default-src 'unsafe-inline' 'strict-dynamic' 'unsafe-eval'; img-src 'self'; object-src 'none'"
+Header add Content-Security-Policy "default-src 'strict-dynamic' 'unsafe-eval'; img-src 'self'; object-src 'none'"
 
 Header unset X-Content-Security-Policy
-Header add X-Content-Security-Policy "default-src 'unsafe-inline' 'strict-dynamic' 'unsafe-eval'; img-src 'self'; object-src 'none'"
+Header add X-Content-Security-Policy "default-src 'strict-dynamic' 'unsafe-eval'; img-src 'self'; object-src 'none'"
 
 Header unset X-WebKit-CSP
-Header add X-WebKit-CSP "default-src 'unsafe-inline' 'strict-dynamic' 'unsafe-eval'; img-src 'self'; object-src 'none'"
+Header add X-WebKit-CSP "default-src 'strict-dynamic' 'unsafe-eval'; img-src 'self'; object-src 'none'"
 
 Header set X-Content-Type-Options "nosniff"
 Header set X-XSS-Protection "1; mode=block"
