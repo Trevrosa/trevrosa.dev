@@ -118,12 +118,12 @@
                 myObstacles[i].update();
             }
             var sco = "0";
-            if (Math.round(myGameArea.frameNo/60, 2)-7 < 0) {
-              sco = "0";
+            if (Math.round(myGameArea.frameNo / 60, 2) - 7 < 0) {
+                sco = "0";
             } else {
-              var ea = Math.round(((Math.round(myGameArea.frameNo / 60, 1) - 7)/1.9), 1).toString();
-              ea = ea.replace(".5", "");
-              sco = ea;
+                var ea = Math.round(((Math.round(myGameArea.frameNo / 60, 1) - 7) / 1.9), 1).toString();
+                ea = ea.replace(".5", "");
+                sco = ea;
             }
             myScore.text = "Score: " + sco
             myScore.update();
@@ -147,13 +147,13 @@
         document.addEventListener('keyup', Ea);
 
         function Ea(e) {
-          if (e.code == "Space") {
+            if (e.code == "Space") {
                 accelerate(0.07)
             }
         }
 
         function Ea1(e) {
-          if (e.code == "Space") {
+            if (e.code == "Space") {
                 accelerate(-0.2)
             }
         }
