@@ -9,6 +9,8 @@
             background-color: #f1f1f1;
         }
     </style>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
 </head>
 
 <body onload="startGame()">
@@ -20,13 +22,13 @@
         function startGame() {
             myGamePiece = new component(30, 30, "red", 10, 120);
             myGamePiece.gravity = 0.05;
-            myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+            myScore = new component("30px", "Arial", "black", 280, 40, "text");
             myGameArea.start();
         }
 
         var myGameArea = {
             canvas: document.createElement("canvas"),
-            start: function() {
+            start: function () {
                 this.canvas.width = 480;
                 this.canvas.height = 270;
                 this.context = this.canvas.getContext("2d");
@@ -34,7 +36,7 @@
                 this.frameNo = 0;
                 this.interval = setInterval(updateGameArea, 20);
             },
-            clear: function() {
+            clear: function () {
                 this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
             }
         }
@@ -50,7 +52,7 @@
             this.y = y;
             this.gravity = 0;
             this.gravitySpeed = 0;
-            this.update = function() {
+            this.update = function () {
                 ctx = myGameArea.context;
                 if (this.type == "text") {
                     ctx.font = this.width + " " + this.height;
@@ -61,20 +63,20 @@
                     ctx.fillRect(this.x, this.y, this.width, this.height);
                 }
             }
-            this.newPos = function() {
+            this.newPos = function () {
                 this.gravitySpeed += this.gravity;
                 this.x += this.speedX;
                 this.y += this.speedY + this.gravitySpeed;
                 this.hitBottom();
             }
-            this.hitBottom = function() {
+            this.hitBottom = function () {
                 var rockbottom = myGameArea.canvas.height - this.height;
                 if (this.y > rockbottom) {
                     this.y = rockbottom;
                     this.gravitySpeed = 0;
                 }
             }
-            this.crashWith = function(otherobj) {
+            this.crashWith = function (otherobj) {
                 var myleft = this.x;
                 var myright = this.x + (this.width);
                 var mytop = this.y;
@@ -115,7 +117,15 @@
                 myObstacles[i].x += -1;
                 myObstacles[i].update();
             }
-            myScore.text = "SCORE: " + myGameArea.frameNo;
+            var sco = "0";
+            if (Math.round(myGameArea.frameNo/60, 2)-7 < 0) {
+              sco = "0";
+            } else {
+              var ea = Math.round(((Math.round(myGameArea.frameNo / 60, 1) - 7)/1.9), 1).toString();
+              ea = ea.replace(".5", "");
+              sco = ea;
+            }
+            myScore.text = "Score: " + sco
             myScore.update();
             myGamePiece.newPos();
             myGamePiece.update();
@@ -132,9 +142,24 @@
             myGamePiece.gravity = n;
         }
     </script>
+    <script type="text/javascript">
+        document.addEventListener('keydown', Ea1);
+        document.addEventListener('keyup', Ea);
+
+        function Ea(e) {
+          if (e.code == "Space") {
+                accelerate(0.07)
+            }
+        }
+
+        function Ea1(e) {
+          if (e.code == "Space") {
+                accelerate(-0.2)
+            }
+        }
+    </script>
     <br>
-    <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-    <p>Use the ACCELERATE button to stay in the air</p>
+    <p>Use your spacebar to stay in the air.</p>
     <p>How long can you stay alive?</p>
 </body>
 
