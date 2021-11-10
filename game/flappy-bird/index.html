@@ -25,22 +25,60 @@
             left: 48%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+            user-select: none;
+            /* supported by Chrome and Opera */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+        }
+
+        .sea {
+            user-select: none;
+            /* supported by Chrome and Opera */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+        }
+
+        .sea1 {
+            user-select: none;
+            /* supported by Chrome and Opera */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
-</head>
-
-<body onload="startGame()">
-    <a href='https://trevrosa.dev/'>
-        <button class="button1">
-            Go Back
-        </button> </a>
     <script type="text/javascript">
-        function startgaying(can) {
-            can.addEventListener('mousedown', Dea)
-            can.addEventListener('mouseup', Deas)
+        window.oncontextmenu = function () {
+            return false; // cancel right click
+        }
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $(".button1").click(function () {
+                    window.location.href = "https://trevrosa.dev"
+                });
+            });
+        });
+
+        function starteaing() {
+            document.addEventListener('mousedown', Dea)
+            document.addEventListener('mouseup', Deas)
 
             function Dea(e) {
                 accelerate(-0.2)
@@ -50,11 +88,17 @@
                 accelerate(0.07)
             }
         }
+
+        function peazl() {
+            console.log("xd! not implemented!")
+        }
     </script>
     <script type="text/javascript">
         var myGamePiece;
         var myObstacles = [];
         var myScore;
+
+        $(document).ready(startGame)
 
         function startGame() {
             myGamePiece = new component(30, 30, "red", 10, 120);
@@ -64,7 +108,8 @@
         }
         var eagg = document.createElement("canvas")
         eagg.setAttribute("id", "eacanvas");
-        startgaying(eagg)
+        starteaing()
+        //peazl()
         var myGameArea = {
             canvas: eagg,
             start: function () {
@@ -136,6 +181,7 @@
             var x, height, gap, minHeight, maxHeight, minGap, maxGap;
             for (i = 0; i < myObstacles.length; i += 1) {
                 if (myGamePiece.crashWith(myObstacles[i])) {
+                    //$(".button2").style.visibility = "visible"
                     return;
                 }
             }
@@ -197,9 +243,14 @@
             }
         }
     </script>
-    <br>
-    <p>Use your spacebar to stay in the air.</p>
-    <p>How long can you stay alive?</p>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
+</head>
+
+<body>
+    <button class="button1">Go Back</button>
+    <p class="sea">Use your spacebar to stay in the air.</p>
+    <p class="sea1">How long can you stay alive?</p>
 </body>
 
 </html>

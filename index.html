@@ -105,23 +105,30 @@
     </style>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $(document).ready(function () {
+            $(".button1").click(function () {
+                window.location.href = "https://trevrosa.dev/game/flappy-bird"
+            });
+            $(".button2").click(function () {
+                window.location.href = "https://trevrosa.dev/github"
+            });
+            $(".button3").click(function () {
+                window.location.href = "https://trevrosa.dev/3d/dna"
+            });
+        });
+    });
+    </script>
 </head>
 
 <body>
     <div class="typewriter h1">
         <h1 style="text-align: center">trevrosa.dev is the best website</h1>
-        <a style="text-align: center" href='https://trevrosa.dev/game/flappy-bird/'>
-            <button class="button1">
-                Play Flappy Bird
-            </button>
-            <a style="text-align: center" href='https://trevrosa.dev/github'>
-                <button class="button2">
-                    Go to the GitHub page!
-                </button>
-                <a style="text-align: center" href='https://trevrosa.dev/3d/dna'>
-                    <button class="button3">
-                        Look at this 3D strand of DNA!
-                    </button>
+        <button class="button1">Play Flappy Bird</button>
+        <button class="button2">Go to the GitHub page!</button>
+        <button class="button3">Look at this 3D strand of DNA!</button>
     </div>
 
 
