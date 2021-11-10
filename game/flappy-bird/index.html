@@ -108,6 +108,17 @@
             accelerate(0.07)
         }
 
+        document.addEventListener('pointerdown', Dea)
+        document.addEventListener('pointerup', Deas)
+
+        function Dea(e) {
+            accelerate(-0.2)
+        }
+
+        function Deas() {
+            accelerate(0.07)
+        }
+
         document.addEventListener('keydown', Ea1);
         document.addEventListener('keyup', Ea);
 
