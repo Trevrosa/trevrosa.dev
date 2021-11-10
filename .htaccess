@@ -5,3 +5,4 @@ Header set Strict-Transport-Security "max-age=631138519; includeSubDomains"
 
 #error pages
 ErrorDocument 404 /ea_pages/404.html
+ErrorDocument 403 /ea_pages/403.html
