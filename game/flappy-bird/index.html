@@ -37,6 +37,23 @@
             /* Internet Explorer/Edge */
         }
 
+        .button2 {
+            background-color: white;
+            border: 2px solid black;
+            color: green;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 43%;
+            left: 48%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
         .sea {
             user-select: none;
             /* supported by Chrome and Opera */
@@ -68,29 +85,42 @@
         window.oncontextmenu = function () {
             return false; // cancel right click
         }
+
         $(document).ready(function () {
             $(document).ready(function () {
                 $(".button1").click(function () {
                     window.location.href = "https://trevrosa.dev"
                 });
+                $(".button2").click(function () {
+                    location.reload();
+                });
             });
         });
 
-        function starteaing() {
-            document.addEventListener('mousedown', Dea)
-            document.addEventListener('mouseup', Deas)
+        document.addEventListener('mousedown', Dea)
+        document.addEventListener('mouseup', Deas)
 
-            function Dea(e) {
-                accelerate(-0.2)
-            }
+        function Dea(e) {
+            accelerate(-0.2)
+        }
 
-            function Deas() {
+        function Deas() {
+            accelerate(0.07)
+        }
+
+        document.addEventListener('keydown', Ea1);
+        document.addEventListener('keyup', Ea);
+
+        function Ea(e) {
+            if (e.code == "Space") {
                 accelerate(0.07)
             }
         }
 
-        function peazl() {
-            console.log("xd! not implemented!")
+        function Ea1(e) {
+            if (e.code == "Space") {
+                accelerate(-0.2)
+            }
         }
     </script>
     <script type="text/javascript">
@@ -101,15 +131,15 @@
         $(document).ready(startGame)
 
         function startGame() {
+            $(".button2").hide();
             myGamePiece = new component(30, 30, "red", 10, 120);
             myGamePiece.gravity = 0.05;
             myScore = new component("30px", "Arial", "black", 280, 40, "text");
             myGameArea.start();
         }
+
         var eagg = document.createElement("canvas")
         eagg.setAttribute("id", "eacanvas");
-        starteaing()
-        //peazl()
         var myGameArea = {
             canvas: eagg,
             start: function () {
@@ -181,7 +211,7 @@
             var x, height, gap, minHeight, maxHeight, minGap, maxGap;
             for (i = 0; i < myObstacles.length; i += 1) {
                 if (myGamePiece.crashWith(myObstacles[i])) {
-                    //$(".button2").style.visibility = "visible"
+                  $(".button2").show();
                     return;
                 }
             }
@@ -227,28 +257,13 @@
             myGamePiece.gravity = n;
         }
     </script>
-    <script type="text/javascript">
-        document.addEventListener('keydown', Ea1);
-        document.addEventListener('keyup', Ea);
-
-        function Ea(e) {
-            if (e.code == "Space") {
-                accelerate(0.07)
-            }
-        }
-
-        function Ea1(e) {
-            if (e.code == "Space") {
-                accelerate(-0.2)
-            }
-        }
-    </script>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=2" />
 </head>
 
 <body>
     <button class="button1">Go Back</button>
+    <button class="button2">Try again?</button>
     <p class="sea">Use your spacebar to stay in the air.</p>
     <p class="sea1">How long can you stay alive?</p>
 </body>
