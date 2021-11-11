@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta name="description" content="flapping bird" />
+<meta content="bird flap" property="og:title">
+<meta content="very fun." property="og:description">
+<meta content="trevrosa.dev" property="og:site_name">
+<meta property="og:image" itemprop="image" content="https://trevrosa.dev/assets/icon.png">
+<meta property="og:type" content="website" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>dna!</title>
 
 <head>
-    <title>flappy bird!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         canvas {
@@ -91,10 +100,48 @@
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/contextMenuStyle.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="contextMenu" class="context-menu" style="display: none">
+        <ul class="menu">
+            <li class="copy"><a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy</a></li>
+        </ul>
+    </div>
     <script type="text/javascript">
-        window.oncontextmenu = function () {
-            return false; // cancel right click
+        document.addEventListener('mouseup', hideMenu)
+        document.addEventListener("contextmenu", menu);
+
+        $(document).ready(function () {
+          $(".copy").click(function () {
+            document.execCommand('copy');
+          });
+        });
+
+        function hideMenu() {
+            document.getElementById("contextMenu")
+                .style.display = "none"
         }
+
+        function menu(e) {
+            e.preventDefault();
+
+            if (document.getElementById("contextMenu").style.display == "block") {
+                hideMenu();
+                var menu = document.getElementById("contextMenu")
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            } else {
+                var menu = document.getElementById("contextMenu")
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+        </script>
+    <script type="text/javascript">
 
         $(document).ready(function () {
             $(document).ready(function () {
