@@ -15,16 +15,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         * {
-          user-select: none;
-          /* supported by Chrome and Opera */
-          -webkit-user-select: none;
-          /* Safari */
-          -khtml-user-select: none;
-          /* Konqueror HTML */
-          -moz-user-select: none;
-          /* Firefox */
-          -ms-user-select: none;
-          /* Internet Explorer/Edge */
+            user-select: none;
+            /* supported by Chrome and Opera */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
         }
 
         canvas {
@@ -79,8 +79,8 @@
         document.addEventListener("contextmenu", menu);
         var isee = true;
 
-        $(document).ready(function () {
-            $(".copy").click(function () {
+        $(document).ready(function() {
+            $(".copy").click(function() {
                 document.execCommand('copy');
             });
         });
@@ -111,12 +111,12 @@
         }
     </script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $(document).ready(function () {
-                $(".button1").click(function () {
+        $(document).ready(function() {
+            $(document).ready(function() {
+                $(".button1").click(function() {
                     window.location.href = "https://trevrosa.dev"
                 });
-                $(".button2").click(function () {
+                $(".button2").click(function() {
                     location.reload();
                 });
             });
@@ -180,7 +180,7 @@
         eagg.setAttribute("id", "eacanvas");
         var myGameArea = {
             canvas: eagg,
-            start: function () {
+            start: function() {
                 this.canvas.width = 480;
                 this.canvas.height = 270;
                 this.context = this.canvas.getContext("2d");
@@ -188,7 +188,7 @@
                 this.frameNo = 0;
                 this.interval = setInterval(updateGameArea, 20);
             },
-            clear: function () {
+            clear: function() {
                 this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
             }
         }
@@ -204,7 +204,7 @@
             this.y = y;
             this.gravity = 0;
             this.gravitySpeed = 0;
-            this.update = function () {
+            this.update = function() {
                 ctx = myGameArea.context;
                 if (this.type == "text") {
                     ctx.font = this.width + " " + this.height;
@@ -215,20 +215,20 @@
                     ctx.fillRect(this.x, this.y, this.width, this.height);
                 }
             }
-            this.newPos = function () {
+            this.newPos = function() {
                 this.gravitySpeed += this.gravity;
                 this.x += this.speedX;
                 this.y += this.speedY + this.gravitySpeed;
                 this.hitBottom();
             }
-            this.hitBottom = function () {
+            this.hitBottom = function() {
                 var rockbottom = myGameArea.canvas.height - this.height;
                 if (this.y > rockbottom) {
                     this.y = rockbottom;
                     this.gravitySpeed = 0;
                 }
             }
-            this.crashWith = function (otherobj) {
+            this.crashWith = function(otherobj) {
                 var myleft = this.x;
                 var myright = this.x + (this.width);
                 var mytop = this.y;

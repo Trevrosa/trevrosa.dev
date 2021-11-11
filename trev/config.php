@@ -20,7 +20,7 @@ return [
      */
     'file_storage_folder' => 'files/',
 
-    /* Sets the web path where you will be able to access your files 
+    /* Sets the web path where you will be able to access your files
      * If you set this to / and your base_url is https://www.example.com, your files will be accessible from
      * https://www.example.com/filename.ext
      * If you set this to myfiles/, your files will be accessible at https://www.example.com/myfiles/filename.ext
@@ -78,10 +78,10 @@ return [
     'enable_rich_text_viewer' => true,
 
     /* This sets the naming scheme to use for ShareX uploads.
-     * Possible values are: 
+     * Possible values are:
      *     keep, provided, date, and random
      * keep mode will keep the file name sent by ShareX
-     * provided mode will use the name sent in the name parameter. 
+     * provided mode will use the name sent in the name parameter.
      *     See the ShareX Configuration section in the README for more information.
      * date mode will generate a name based on the date format specified in upload_date_format
      * random mode will generate a random name with length set in random_name_length
@@ -89,7 +89,7 @@ return [
     'sharex_upload_naming_scheme' => 'random',
 
     /* This sets the naming scheme to use for gallery uploads.
-     * Possible values are: 
+     * Possible values are:
      *     keep, date, and random
      * keep mode will keep the name of the uploaded file
      * date mode will generate a name based on the date format specified in upload_date_format
@@ -98,7 +98,7 @@ return [
     'gallery_upload_naming_scheme' => 'random',
 
     /* This sets the naming scheme to use if no file name is provided for a text upload.
-     * Possible values are: 
+     * Possible values are:
      *     date and random
      * date mode will generate a name based on the date format specified in upload_date_format
      * random mode will generate a random name with length set in random_name_length
@@ -113,7 +113,7 @@ return [
     'upload_date_format' => 'Y-m-d_H.i.s',
 
     /* This controls whether to enable uploader's built in updater
-     * If enabled, the uploader will prompt you to update when a new version is released 
+     * If enabled, the uploader will prompt you to update when a new version is released
      *      If you agree, it will then automatically download and install the latest version
      * If you disable this, you will need to manually update the uploader by copying the new files into your website
      */
@@ -124,7 +124,7 @@ return [
      * If you an update ever breaks your uploader, you can just go to <base_url>/rollback/update.php to roll back the update */
     'enable_update_rollback' => true,
 
-    /* This controls whether the uploader should instruct the browser to cache the uploaded images 
+    /* This controls whether the uploader should instruct the browser to cache the uploaded images
      * This is enabled by default, but can slightly hurt performance on low power systems
      */
     'enable_image_cache' => true,
