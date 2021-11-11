@@ -112,11 +112,12 @@
     <script type="text/javascript">
         document.addEventListener('mouseup', hideMenu)
         document.addEventListener("contextmenu", menu);
+        var isee = true;
 
         $(document).ready(function () {
-          $(".copy").click(function () {
-            document.execCommand('copy');
-          });
+            $(".copy").click(function () {
+                document.execCommand('copy');
+            });
         });
 
         function hideMenu() {
@@ -126,24 +127,25 @@
 
         function menu(e) {
             e.preventDefault();
-            accelerate(-0.2)
+            isee = false;
 
             if (document.getElementById("contextMenu").style.display == "block") {
                 hideMenu();
+                isee = true;
                 var menu = document.getElementById("contextMenu")
                 menu.style.display = 'block';
                 menu.style.left = e.pageX + "px";
                 menu.style.top = e.pageY + "px";
             } else {
+                isee = true;
                 var menu = document.getElementById("contextMenu")
                 menu.style.display = 'block';
                 menu.style.left = e.pageX + "px";
                 menu.style.top = e.pageY + "px";
             }
         }
-        </script>
+    </script>
     <script type="text/javascript">
-
         $(document).ready(function () {
             $(document).ready(function () {
                 $(".button1").click(function () {
@@ -159,7 +161,9 @@
         document.addEventListener('mouseup', Deas)
 
         function Dea(e) {
-            accelerate(-0.2)
+            if (isee) {
+                accelerate(-0.2)
+            }
         }
 
         function Deas() {
