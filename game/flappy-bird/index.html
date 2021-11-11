@@ -14,19 +14,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+        * {
+          user-select: none;
+          /* supported by Chrome and Opera */
+          -webkit-user-select: none;
+          /* Safari */
+          -khtml-user-select: none;
+          /* Konqueror HTML */
+          -moz-user-select: none;
+          /* Firefox */
+          -ms-user-select: none;
+          /* Internet Explorer/Edge */
+        }
+
         canvas {
             border: 1px solid #d3d3d3;
             background-color: #f1f1f1;
-            user-select: none;
-            /* supported by Chrome and Opera */
-            -webkit-user-select: none;
-            /* Safari */
-            -khtml-user-select: none;
-            /* Konqueror HTML */
-            -moz-user-select: none;
-            /* Firefox */
-            -ms-user-select: none;
-            /* Internet Explorer/Edge */
         }
 
         .button1 {
@@ -42,18 +45,6 @@
             position: absolute;
             top: 50%;
             left: 48%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            user-select: none;
-            /* supported by Chrome and Opera */
-            -webkit-user-select: none;
-            /* Safari */
-            -khtml-user-select: none;
-            /* Konqueror HTML */
-            -moz-user-select: none;
-            /* Firefox */
-            -ms-user-select: none;
-            /* Internet Explorer/Edge */
         }
 
         .button2 {
@@ -71,32 +62,6 @@
             left: 48%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-        }
-
-        .sea {
-            user-select: none;
-            /* supported by Chrome and Opera */
-            -webkit-user-select: none;
-            /* Safari */
-            -khtml-user-select: none;
-            /* Konqueror HTML */
-            -moz-user-select: none;
-            /* Firefox */
-            -ms-user-select: none;
-            /* Internet Explorer/Edge */
-        }
-
-        .sea1 {
-            user-select: none;
-            /* supported by Chrome and Opera */
-            -webkit-user-select: none;
-            /* Safari */
-            -khtml-user-select: none;
-            /* Konqueror HTML */
-            -moz-user-select: none;
-            /* Firefox */
-            -ms-user-select: none;
-            /* Internet Explorer/Edge */
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

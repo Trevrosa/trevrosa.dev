@@ -14,6 +14,19 @@
 <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <style>
+        * {
+            user-select: none;
+            /* supported by Chrome and Opera */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+        }
+
         .button1 {
             background-color: white;
             border: 2px solid black;
@@ -47,9 +60,9 @@
         document.addEventListener("contextmenu", menu);
 
         $(document).ready(function () {
-          $(".copy").click(function () {
-            document.execCommand('copy');
-          });
+            $(".copy").click(function () {
+                document.execCommand('copy');
+            });
         });
 
         function hideMenu() {
@@ -73,7 +86,7 @@
                 menu.style.top = e.pageY + "px";
             }
         }
-        </script>
+    </script>
 </head>
 
 <body>
