@@ -262,6 +262,9 @@
                 sco = ea;
             }
             myScore.text = "Score: " + sco
+            if (myGamePiece.y < -9) {
+                accelerate(5)
+            }
             myScore.update();
             myGamePiece.newPos();
             myGamePiece.update();
