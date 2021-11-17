@@ -5,11 +5,6 @@
 <script src="http://www.skulpt.org/js/skulpt-stdlib.js" type="text/javascript"></script> 
   </head>
   <body>
-    <script type="text/javascript">
-      $(document).onReady(function () {
-        runit()
-      });
-    </script>
     <script type="text/javascript"> 
 // output functions are configurable.  This one just appends some text
 // to a pre element.
@@ -54,7 +49,8 @@ t = turtle.Turtle()
 t.forward(100)
 
 print "Hello World" 
-</textarea><br /> 
+</textarea><br />
+  <button type="button" onclick="runit()">Run</button> 
 </form> 
 <pre id="output" ></pre> 
 <div id="mycanvas"></div> 
