@@ -1,10 +1,16 @@
 <html>
 <head>
-  <script src="trevrosa.dev/sustainable-cities/assets/hide-show-button.js"></script>
+  <script>
+    </script>
   <script>
   $(document).ready(function(){
-  $("button").click(function(){
-    $("picture").toggle();
+    $("#hide").click(function(){
+      $("h4").hide();
+    });
+    $("#show").click(function(){
+      $("h4").show();
+    });
+  });
   });
 });
   </script>
@@ -69,7 +75,7 @@ p {
 }
 
 body {
-  background-color: black
+  background-color: white
 }
 
 .button {
@@ -104,6 +110,10 @@ body {
 
 .button2:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.picture {
+ float: inherit;
 }
 
 </style>
@@ -159,10 +169,17 @@ body {
     <p><q>JQuery Effects - Hide and Show.</q> Jquery Effects - Hide and Show, https://www.w3schools.com/jquery/jquery_hide_show.asp.</p>
   </div>
   <br>
-  <div class="cited-box">
-  <button class="button button1 button2" style="vertical-align:middle"><span>Hide/Show Graphs </span></button>
+  <button id="hide" class="button button1 button2" style="vertical-align:middle"><span>Hide Graphs </span></button>
+  <button id="show" class="button button1 button2" style="vertical-align:middle"><span>Show Graphs </span></button>
+  <br>
+  <br>
+  <br>
   <picture>
+    <img width="500px" src="trevrosa.dev/sustainable-cities/assets/graph-1.png">
+    <img src="trevrosa.dev/sustainable-cities/assets/graph-2.png">
+    <img src="trevrosa.dev/sustainable-cities/assets/graph-3.png">
+    <img src="trevrosa.dev/sustainable-cities/assets/graph-4.png">
   </picture>
-</div>
+  <h4>hi</h4>
 </body>
 </html>
