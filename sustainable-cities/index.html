@@ -26,6 +26,30 @@
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+body, html {
+  height: 100%;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url('./assets/parallax1.jpeg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 
 .heading-box {
   background-color: orange;
@@ -83,49 +107,54 @@ mark {
   <div class="text-box">
   <h2>What is this goal?</h2>
   <hr>
-  <p>
+  <tt>
     <img width="100px" src="./assets/sustainable_cities_and_Communities.png"/>
     UN goal 11 is a goal that links to global warming and it means that all cities should be able to not cause any increse in global warming. This means that you'll need things to reduce carbon dioxide as well as get rid of carbon dioxide.
-  </p>
+  </tt>
   </div>
-  <hr>
+  <div class="parallax1"></div>
   <div class="text-box">
   <h2>What is already being done?</h2>
   <hr>
   <img width="100px" src="./assets/plants_in_house.png"/>
-  <p>Pepole are already planting plants in their house to decrese global warming, however, that is not enough as we have not reached net zero yet.
+  <tt>Pepole are already planting plants in their house to decrese global warming, however, that is not enough as we have not reached net zero yet.
   </div>
   <hr>
   <div class="text-box">
   <h2>What else can be done?</h2>
   <hr>
   <img width="100px" src="./assets/light_off.png"/>
-  <p>Pepole can rember to turn off the air conditoning, use a blanket instead of a heater, open the window instead of turn on the AC and more.
+  <tt>Pepole can rember to turn off the air conditoning, use a blanket instead of a heater, open the window instead of turn on the AC and more.
   </div>
   <hr>
   <div class="text-box">
   <h2>Why help?</h2>
   <hr>
   <img width="100px" src="./assets/why_help.png"/>
-  <p>There is no doubt that global warming is a big issue and needs to be resolved or Earth could suffer horundous consequnces</p>
+  <tt>There is no doubt that global warming is a big issue and needs to be resolved or Earth could suffer horundous consequnces</tt>
   </div>
   <hr>
   <div class="text-box">
   <h2>Learn more</h2>
   <hr>
-  <p> If you would like to learn more about this goal you can go to <a href="https://sdgs.un.org/goals/goal11">the un website</a> which has an infographic but there is also <a href="https://www.unep.org/explore-topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-11">a more informative website</a> and a <a href="https://www.globalgoals.org/goals/11-sustainable-cities-and-communities/"> quick overview of the topic</a>. These are the most reliable sources because they are primary sources but if you don't mind secondary sources then there is a <a href="https://www.greenqueen.com.hk/un-sustainable-development-goals-in-hong-kong-myths-challenges/#:~:text=Goal%20%2311%3A%20Sustainable%20Cities%20and,Goal%20%2314%3A%20Life%20Below%20Water">Hong Kong goverment statsic website</a> or a <a href="https://www.nationalgeographic.org/encyclopedia/sustainable-development-goal-11-sustainable-cities-and-communities/">Natinal Geographic ofical website</a> which you may also like to visit.
+  <tt> If you would like to learn more about this goal you can go to <a href="https://sdgs.un.org/goals/goal11">the un website</a> which has an infographic but there is also <a href="https://www.unep.org/explore-topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-11">a more informative website</a> and a <a href="https://www.globalgoals.org/goals/11-sustainable-cities-and-communities/"> quick overview of the topic</a>. These are the most reliable sources because they are primary sources but if you don't mind secondary sources then there is a <a href="https://www.greenqueen.com.hk/un-sustainable-development-goals-in-hong-kong-myths-challenges/#:~:text=Goal%20%2311%3A%20Sustainable%20Cities%20and,Goal%20%2314%3A%20Life%20Below%20Water">Hong Kong goverment statsic website</a> or a <a href="https://www.nationalgeographic.org/encyclopedia/sustainable-development-goal-11-sustainable-cities-and-communities/">Natinal Geographic ofical website</a> which you may also like to visit.
   </div>
   <hr>
   <div class="cited-box">
     <h2>Works Cited</h2>
     <h3>Images</h3>
-    <p><q>Make Cities and Human Settlements Inclusive, Safe, Resilient and Sustainable.</q> Sustainable Development Matters, https://sdmatters.cuhk.edu.hk/sdgs/11-cities/. </p>
-    <p>Vuji&#263;, Katja, and Photography by Max Burkhalter. <q>6 Tips to Help Your Plants Thrive.</q> Architectural Digest, 19 Nov. 2019, https://www.architecturaldigest.com/story/best-plant-care-tips. </p>
-    <p><q>Why Can't You Just Turn off the Lights?</q> Your Teen Magazine, 2 Oct. 2020, https://yourteenmag.com/family-life/communication/just-turn-off-the-lights. </p>
-    <p>Dreamer, Green. <q>35 Environmental Organizations and Nonprofits for a Sustainable Future (List and Ways You Can Get Involved).</q> GREEN DREAMER, GREEN DREAMER, 8 Dec. 2020, https://greendreamer.com/journal/environmental-organizations-nonprofits-for-a-sustainable-future. </p>
+    <tt><q>Make Cities and Human Settlements Inclusive, Safe, Resilient and Sustainable.</q> Sustainable Development Matters, <a href=" https://sdmatters.cuhk.edu.hk/sdgs/11-cities/">https://sdmatters.cuhk.edu.hk/sdgs/11-cities/</a>. </tt>
+    <tt>Vuji&#263;, Katja, and Photography by Max Burkhalter. <q>6 Tips to Help Your Plants Thrive.</q> Architectural Digest, 19 Nov. 2019, <a href="https://www.architecturaldigest.com/story/best-plant-care-tips">https://www.architecturaldigest.com/story/best-plant-care-tips</a>.</tt>
+    <tt><q>Why Can't You Just Turn off the Lights?</q> Your Teen Magazine, 2 Oct. 2020, <a href="https://yourteenmag.com/family-life/communication/just-turn-off-the-lights">https://yourteenmag.com/family-life/communication/just-turn-off-the-lights</a>. </tt>
+    <tt>Dreamer, Green. <q>35 Environmental Organizations and Nonprofits for a Sustainable Future (List and Ways You Can Get Involved).</q> GREEN DREAMER, GREEN DREAMER, 8 Dec. 2020, <a href="https://greendreamer.com/journal/environmental-organizations-nonprofits-for-a-sustainable-future">https://greendreamer.com/journal/environmental-organizations-nonprofits-for-a-sustainable-future</a>.</tt>
     <hr>
     <h3>Infomation</h3>
-    <h3>Sorce Code</h3>
+    <tt><q>Goal 11: Sustainable Cities and Communities.</q> The Global Goals, 15 Mar. 2022, <a href="https://www.globalgoals.org/11-sustainable-cities-and-communities">https://www.globalgoals.org/11-sustainable-cities-and-communities</a>.</tt>
+    <tt><q>Goal 11 | Department of Economic and Social Affairs.</q> United Nations, United Nations, <a href="https://sdgs.un.org/goals/goal11">https://sdgs.un.org/goals/goal11</a>.</tt>
+    <tt>Environment, UN. <q>Goal 11: Sustainable Cities and Communities.</q> UNEP, <a href="https://www.unep.org/explore-topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-11">https://www.unep.org/explore-topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-11</a>.</tt>
+    <hr>
+    <h3>Code</h3>
+    <tt>Geoff Graham on Jul 11, and Geoff Graham. <q>Typewriter Effect: CSS-Tricks.</q> CSS, 15 Dec. 2017, <a href="https://css-tricks.com/snippets/css/typewriter-effect/">https://css-tricks.com/snippets/css/typewriter-effect/</a>.</tt>
   </div>
   <hr>
   <div class="text-box">
