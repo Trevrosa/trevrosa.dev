@@ -6,14 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bees Matter"/>
+    <meta content="Home page" property="og:title">
+    <meta content="Bee awareness website" property="og:description">
+    <meta content="trevrosa.dev" property="og:site_name">
+    <meta property="og:image" itemprop="image" content="/bees/assets/favicon.ico?v=2">
+    <meta property="og:type" content="website"/>
+
     <title>Bees Matter</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        variants: {
+          display: ['responsive', 'group-hover', 'group-focus'],
+        }
+      }
+    </script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
 </head>
 
 <body>
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico"/>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico"/>
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/bees/assets/favicon.ico?v=2"/>
+  <link rel="icon" type="image/x-icon" href="/bees/assets/favicon.ico?v=2"/>
 
   <nav class="bg-white shadow-lg">
     <div class="max-w-6xl mx-auto px-4">
@@ -22,55 +37,47 @@
           <div>
             <!-- website Logo -->
             <a href="#" class="flex items-center py-4 px-2">
-              <img src="../assets/favicon.ico" alt="Logo" class="h-8 w-8 mr-2">
+              <img src="../assets/favicon.ico" alt="Logo" class="mr-2">
               <span class="font-semibold text-gray-500 text-lg">Bees Matter</span>
             </a>
           </div>
           <!-- pages -->
           <div class="hidden md:flex items-center space-x-1">
-            <a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"></a>
-            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
-            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact Us</a>
+            <a href="" class="py-4 px-2 text-yellow-500 border-b-4 border-yellow-400 font-semibold">Home</a>
+            <div class="relative group">
+              <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">What do they do?</a>
+              <div class="rounded absolute z-10 hidden bg-grey-200 group-hover:block pt-3">
+                  <div class="rounded px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg pt-3">
+                    <div class="rounded grid grid-cols-0.8 gap-4 md:grid-cols-2">
+                      <p>
+                        <a href="" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Pollination</a>
+                        <a href="" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Food</a>
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="relative group">
+            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">How are they being threatened?</a>
+            <div class="rounded absolute z-10 hidden bg-grey-200 group-hover:block pt-3">
+                <div class="rounded px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg pt-3">
+                  <div class="rounded grid grid-cols-0.8 gap-4 md:grid-cols-2">
+                    <p>
+                      <a href="" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Pesticides</a>
+                      <a href="" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Disease</a>
+                      <a href="" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Environment</a>
+                    </p>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">How can I help?</a>
           </div>
-        </div>
-        <!-- mobile menu button -->
-        <div class="md:hidden flex items-center">
-          <button class="outline-none mobile-menu-button">
-          <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
-            x-show="!showMenu"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
         </div>
       </div>
     </div>
-    <!-- mobile menu -->
-    <div class="hidden mobile-menu">
-      <ul class="">
-        <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-        <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-        <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-        <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
-      </ul>
-    </div>
-    <script type="text/javascript">
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
   </nav>
-  <h1 class="text-green-500 text-2xl md:text-3xl lg:text-4xl font-bold p-4">Tailwind Navigation Toolbar</h1>
+  <!-- content starts -->
 </body>
 
 </html>
