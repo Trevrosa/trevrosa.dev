@@ -13,16 +13,16 @@
     <meta property="og:image" itemprop="image" content="../assets/logo.png?v=4">
     <meta property="og:type" content="website"/>
 
-    <title>Bees Matter</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        variants: {
-          display: ['responsive', 'group-hover', 'group-focus'],
-        }
+  <title>Bees Matter</title>
+  <script src="../assets/tailwind.js"></script>
+  <script>
+    tailwind.config = {
+      variants: {
+        display: ['responsive', 'group-hover', 'group-focus'],
       }
-    </script>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+    }
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
 </head>
 
 <body>
@@ -41,7 +41,7 @@
               <span class="font-semibold text-gray-500 text-lg">Bees Matter</span>
             </a>
           </div>
-          <!-- pages -->
+          <!-- pages in navigation bar -->
           <div class="hidden md:flex items-center space-x-1">
             <a href="/bees/home" class="py-4 px-2 text-yellow-500 border-b-4 border-yellow-400 font-semibold">Home</a>
             <div class="relative group">
@@ -55,6 +55,7 @@
                       </p>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
             <div class="relative group">
@@ -62,6 +63,7 @@
             <div class="rounded absolute z-10 hidden bg-grey-200 group-hover:block pt-3">
                 <div class="rounded px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg pt-3">
                   <div class="rounded grid grid-cols-0.8 gap-4 md:grid-cols-2">
+                    <!-- dropdowns -->
                     <p>
                       <a href="./how-are-they-threatened/pesticides" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Pesticides</a>
                       <a href="./how-are-they-threatened/diseases" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Disease</a>
@@ -69,7 +71,7 @@
                     </p>
                   </div>
                 </div>
-            </div>
+              </div>
             </div>
             <a href="./how-to-help/" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">How can I help?</a>
           </div>
