@@ -3,15 +3,15 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bees Matter"/>
-    <meta content="Home page" property="og:title">
-    <meta content="Bee awareness website" property="og:description">
-    <meta content="trevrosa.dev" property="og:site_name">
-    <meta property="og:image" itemprop="image" content="/bees/assets/logo.png?v=4">
-    <meta property="og:type" content="website"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bees Matter"/>
+  <meta content="Pesticides" property="og:title">
+  <meta content="Bee awareness website" property="og:description">
+  <meta content="trevrosa.dev" property="og:site_name">
+  <meta property="og:image" itemprop="image" content="/bees/assets/logo.png?v=4">
+  <meta property="og:type" content="website"/>
 
   <title>Bees Matter</title>
   <script src="/bees/assets/js/tailwind.js"></script>
@@ -22,15 +22,15 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
-</head>
-
-<body>
-  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css"/>
   <link rel="shortcut icon" type="image/x-icon" href="/bees/assets/favicon.ico?v=5"/>
   <link rel="icon" type="image/x-icon" href="/bees/assets/favicon.ico?v=5"/>
+</head>
 
-  <nav class="bg-white shadow-lg">
+<body class="bg-yellow-100">
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
         <div class="flex space-x-7">
@@ -42,19 +42,7 @@
           <!-- pages in navigation bar -->
           <div class="hidden md:flex items-center space-x-1">
             <a href="/bees/home" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Home</a>
-            <div class="relative group">
-              <a href="/bees/what-they-do" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">What do they do?</a>
-              <div class="rounded absolute z-10 hidden bg-grey-200 group-hover:block pt-3">
-                <div class="rounded px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg pt-3">
-                  <div class="rounded grid grid-cols-0.8 gap-4 md:grid-cols-2">
-                    <p>
-                      <a href="/bees/what-they-do/pollination" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Pollination</a>
-                      <a href="/bees/what-they-do/food" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Food</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a href="/bees/what-they-do" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">What do they do?</a>
             <div class="relative group">
               <a href="/bees/how-are-they-threatened" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">How are they being threatened?</a>
               <div class="rounded absolute z-10 hidden bg-grey-200 group-hover:block pt-3">
@@ -64,7 +52,7 @@
                     <p>
                       <a href="/bees/how-are-they-threatened/pesticides" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Pesticides</a>
                       <a href="/bees/how-are-they-threatened/diseases" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Disease</a>
-                      <a href="/bees/how-are-they-threatened/pesticides" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Environment</a>
+                      <a href="/bees/how-are-they-threatened/environment" class="py-2 px-2 text-gray-500 font-semibold hover:text-yellow-400 transition duration-300">Environment</a>
                     </p>
                   </div>
                 </div>
@@ -77,7 +65,29 @@
     </div>
   </nav>
   <!-- content starts -->
-  
+  <img src="/bees/assets/media/Bee4.jpg" alt="Bee pollinating a flower." height="1200" width="800" class="mx-auto py-6">
+  <div class="flex flex-col justify-center pt-50">
+    <div class="text-center font-semibold text-lg text-gray-500">
+      <h1 class="font-bold text-xl">Pesticide traces are found in 75% of honey.</h1>
+      <p>
+        What does this mean?
+        It means that the pesticides in honey that we eat can cause memory loss and finger tremors in large doses.<br><br>
+
+        This pesticide is called Neonicotinoids, a similar chemical to nicotine.<br>
+        This kind of pesticide is one of the most popular types of pesticides in the world (these pesticides are used in over 120 countries in at least 140 crops). <br>
+        This means that they stimulate the bees' brains, which makes the bees think that it's brighter than it actually is, which causes their circadian rhythm to change. <br>
+        This causes honey bees to lose their sense of time and navigation.<br><br>
+
+        Here is a data visualisation of the usage of pesticides from 1990 to 2017.
+        <iframe src="https://ourworldindata.org/grapher/pesticide-use-tonnes?tab=chart" loading="lazy" style="width: 50%; height: 400px; border: 0px none; margin: 0 auto; display: block;"></iframe>
+      </p>
+    </div>
+  </div>
+  <div class="text-center font-semibold text-[15px] text-gray-500 pt-6">
+    <p class="bg-stone-200">
+      Citations <a href="/bees/citations" class="hover:text-yellow-400 transition duration-300">here</a>.<br>Made with <a href="https://tailwindcss.com" class="hover:text-yellow-400 transition duration-300">TailwindCSS</a> by Trevor.
+    </p>
+  </div>
 </body>
 
 </html>

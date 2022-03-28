@@ -8730,7 +8730,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   function Qn({ mode: i, color: e, alpha: t }) {
     let r = t !== void 0;
-    return `${i}(${e.join(" ")}${r ? ` / ${t}` : ""})`;
+    return `${i}(${e.join(" ")}${r ? `/${t}` : ""})`;
   }
   var Hn,
     A1,
