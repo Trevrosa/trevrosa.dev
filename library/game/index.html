@@ -2,28 +2,15 @@
 <html>
 <head>
     <title>Library Game</title>
+    <style>
+    .canvas {
+      border: 2px solid black;
+      background-color: blue;
+    }
+    </style>
 </head>
 <body>
-  <script>
-  let mySprite = sprites.create(img`
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
-      `, SpriteKind.Player)
-  controller.moveSprite(mySprite)
-
- </script>
+  <div class="canvas"></div>
+  <body onload="startgame()">
+    <
 </html>
