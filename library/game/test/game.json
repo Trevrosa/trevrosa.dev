@@ -12,12 +12,12 @@
     "orientation": "landscape",
     "packageName": "com.example.downhillbike",
     "pixelsRounding": false,
-    "projectUuid": "a06bf63c-e6dd-4558-a0e9-863c9416f463",
+    "projectUuid": "fc9f069a-8f65-43dd-b2c8-0e9d6e3371f1",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
     "version": "0.0.1",
-    "name": "index.html",
+    "name": "Downhill Bike Demo",
     "description": "",
     "author": "Zat",
     "windowWidth": 800,
@@ -47,7 +47,11 @@
       "RdnXeK0samTcrV33dVVHUvfOr6d2"
     ],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "keyboard",
+      "gamepad",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -60,7 +64,7 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/Head.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Head.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Head.png",
@@ -69,7 +73,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Torso.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Torso.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Torso.png",
@@ -78,7 +82,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Thigh.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Thigh.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Thigh.png",
@@ -87,7 +91,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Leg.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Leg.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Leg.png",
@@ -96,7 +100,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Upper Arm.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Upper Arm.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Upper Arm.png",
@@ -105,7 +109,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Arm.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Arm.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Arm.png",
@@ -114,7 +118,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/FrontWheel.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/FrontWheel.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\FrontWheel.png",
@@ -123,7 +127,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/BackWheel.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/BackWheel.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\BackWheel.png",
@@ -132,7 +136,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Ground.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Ground.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Ground.png",
@@ -141,7 +145,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Pedal.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Pedal.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Pedal.png",
@@ -150,7 +154,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Crank.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Crank.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Crank.png",
@@ -159,7 +163,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Saddle.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Saddle.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Saddle.png",
@@ -168,7 +172,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/FrontSuspensionBottom.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/FrontSuspensionBottom.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\FrontSuspensionBottom.png",
@@ -177,7 +181,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/RearSuspension.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/RearSuspension.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\RearSuspension.png",
@@ -186,7 +190,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Frame.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Frame.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Frame.png",
@@ -195,7 +199,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Win.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Win.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Win.png",
@@ -204,7 +208,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Start.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Start.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Start.png",
@@ -213,7 +217,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Forward.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Forward.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Forward.png",
@@ -222,7 +226,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Backward.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Backward.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Backward.png",
@@ -231,7 +235,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Brake.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Brake.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Brake.png",
@@ -240,7 +244,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Esc.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Esc.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Esc.png",
@@ -249,7 +253,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Left.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Left.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Left.png",
@@ -258,7 +262,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Right.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Right.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Right.png",
@@ -267,7 +271,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/snow.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/snow.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\snow.png",
@@ -276,7 +280,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/cliff.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/cliff.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX/cliff.png",
@@ -285,7 +289,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/tree10.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/tree10.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\tree10.png",
@@ -294,7 +298,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/bush.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/bush.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\bush.png",
@@ -303,7 +307,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/grass.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/grass.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\grass.png",
@@ -312,7 +316,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/signRight.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/signRight.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\signRight.png",
@@ -321,7 +325,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Shelf.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Shelf.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Shelf.png",
@@ -330,7 +334,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Stone.jpg",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/Stone.jpg",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\Stone.jpg",
@@ -339,7 +343,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/cliff2.png",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/cliff.png",
         "kind": "image",
         "metadata": "",
         "name": "GFX\\cliff.png",
@@ -347,47 +351,11 @@
         "userAdded": false
       },
       {
-        "file": "assets/SF Atarian System.ttf",
+        "file": "https://resources.gdevelop-app.com/examples/downhill-bike-physics-demo/GFX/SF Atarian System.ttf",
         "kind": "font",
         "metadata": "",
         "name": "GFX\\SF Atarian System.ttf",
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frame-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/Frame-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BackWheel-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/BackWheel-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BackWheel-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/BackWheel-1-0.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/FrontWheel-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/FrontWheel-1.png",
-        "smoothed": true,
-        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3440,11 +3408,11 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/Frame-1.png",
+                      "image": "GFX\\Frame.png",
                       "points": [
                         {
                           "name": "Seat",
@@ -3548,11 +3516,11 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/FrontWheel-1.png",
+                      "image": "GFX\\FrontWheel.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3610,11 +3578,11 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets/BackWheel-1-0.png",
+                      "image": "GFX\\BackWheel.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
